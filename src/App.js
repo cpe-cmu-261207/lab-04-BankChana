@@ -84,13 +84,16 @@ function App() {
             placeholder="Subject ID"
             style={input}
           />
+          <br/>
+          <br/>
           <select type="radio" id="CreditSubject" style={input} style={select}>
+            <option>Select</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-            <option value="4">4</option>
           </select>
           <select type="radio" id="GradeSubject" style={input} style={select}>
+            <option>Select</option>
             <option value="A">A</option>
             <option value="B+">B+</option>
             <option value="B">B</option>
@@ -104,7 +107,7 @@ function App() {
           <br/>
           <br/>
           <button type="submit" style={button} onClick={addCourse}>
-            add
+            ADD
           </button>
         </div>
       </>

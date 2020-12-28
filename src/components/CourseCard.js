@@ -11,7 +11,7 @@ export const CourseCard = (props) => {
     backgroundColor: "white"
   };
   const button = {
-    color: "green",
+    color: "red",
     float: "right"
   };
   return (
