@@ -6,11 +6,60 @@ function App() {
 
   const [myCourses, setMyCourse] = useState([]);
   const [inputData, setInputData] = useState([]);
+  const [GPA, setGPA] = useState(4.0);
 
   // TODO: Fix this
-  const CalculateGPA = () => {
+  const CalculateGPA = (cc) => {
     console.log(myCourses);
-    return 4;
+    return GPA
+    /* var r_gpa = 0
+    var r_cre  = 0 
+    var cal_gpa = 0
+    cc.forEach((item) => {
+      switch(item.grd){
+        case 'A' :
+          r_gpa = 4
+          r_cre += Number(item.crd) 
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+        case 'B+' :
+          r_gpa = 3.5
+          r_cre += Number(item.crd)
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+        case 'B' :
+          r_gpa = 3
+          r_cre += Number(item.crd)
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+        case 'C+' :
+          r_gpa = 2.5
+          r_cre += Number(item.crd)
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+        case 'C' :
+          r_gpa = 2
+          r_cre += Number(item.crd)
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+        case 'D+' :
+          r_gpa = 1.5
+          r_cre += Number(item.crd)
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+        case 'D' :
+          r_gpa = 1
+          r_cre += Number(item.crd)
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+        case 'F' :
+          r_gpa = 0
+          r_cre += Number(item.crd)
+          cal_gpa += r_gpa * Number(item.crd)
+          break
+      }  
+    });
+    return setGPA(cal_gpa / r_cre) */
   };
 
   /**
@@ -107,7 +156,7 @@ function App() {
           <br/>
           <br/>
           <button type="submit" style={button} onClick={addCourse}>
-            ADD
+            submit
           </button>
         </div>
       </>
